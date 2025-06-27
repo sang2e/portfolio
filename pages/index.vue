@@ -1,8 +1,9 @@
 <template>
-  <div>하이</div>
-  <MainIntro />
+  <MainAbout />
 </template>
 
-<script setup lang="ts">
-
+<script setup>
+definePageMeta({
+  layout: 'default'
+})
 </script>

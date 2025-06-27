@@ -1,6 +1,6 @@
 <template>
     <div>
-        하이요????
+        about me
     </div>
 </template>
 <script setup>
