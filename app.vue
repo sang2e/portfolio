@@ -1,5 +1,5 @@
 <template>
-  <div id="app-wrapper">
+  <div id="app-wrapper" class="scroll-smooth overflow-x-hidden">
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
@@ -11,9 +11,15 @@
 <script setup>
 useHead({
   link: [
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Meddon&display=swap'
     }
   ]
 })

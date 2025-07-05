@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@import 'aos/dist/aos.css';
+
+/* @tailwind utilities; */
 
 @layer base {
   /* 터치, 텍스트 크기 조정 방지 */
@@ -14,27 +16,28 @@
   html,
   body {
     touch-action: manipulation;
-    font-size: 16px !important;
-    line-height: 1.5;
+    /* font-size: 16px !important;
+    line-height: 1.5; */
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     /* font-family: "Rethink Sans"; */
     user-select: none;
+    scroll-behavior: smooth;
   }
 
   /* 최대 너비 768px인 wrapper */
-  .wrapper {
+  /* .wrapper {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   /* 모바일 대응 */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     body {
       font-size: 16px !important;
     }
-  }
+  } */
 }
