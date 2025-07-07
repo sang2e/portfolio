@@ -2,7 +2,8 @@
     <div id="about" class="px-[20px] py-[100px] pt-[150px] max-w-[1200px] w-full mx-auto">
         <div class="flex flex-col justify-start items-center text-center gap-[50px]">
             <div class="w-[150px] sm:w-[200px]">
-                <img :src=aboutImg alt="베리 사진" class="w-full" data-aos="fade-up">
+                <!-- <img :src=aboutImg alt="베리 사진" class="w-full" data-aos="fade-up"> -->
+                <img :src="baseURL + 'img/berry.png'" alt="베리 사진" class="w-full" data-aos="fade-up">
             </div>
             <div data-aos="fade-up" class="word-keep">
                 안녕하세요.<br/> 
@@ -29,9 +30,11 @@
 </template>
 <script setup>
 import { SquareArrowOutUpRight, CircleArrowRight } from 'lucide-vue-next'
-import aboutImg from '@/assets/images/berry.png'
+// import aboutImg from '@/assets/images/berry.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
 
 onMounted(() => {
   if (process.client) {

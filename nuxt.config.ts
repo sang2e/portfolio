@@ -7,12 +7,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   },
-  router: {
-    options: {
-      // GitHub Pages용 라우터 경로 설정
-      base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
-    },
-  },
   generate: {
     dir: 'docs',
   },

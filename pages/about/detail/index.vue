@@ -1,13 +1,15 @@
 <template>
     <div>
         <div class="w-full h-[250px] bg-cover"
-            :style="{ backgroundImage: `url(${bannerImg})`}"
+        :style="{ backgroundImage: `url(${baseURL}img/banner.png)` }"
         ></div>
+        <!-- :style="{ backgroundImage: `url(${bannerImg})`}" -->
 
         <div class="flex flex-col justify-start items-start gap-[50px] w-full max-w-[768px] mx-auto py-[100px]">
             <div class="flex flex-col sm:flex-row justify-start items-center sm:items-start gap-[20px] w-full px-[20px]">
                 <div class="w-[150px]" data-aos="fade-up">
-                    <img :src=profileImg alt="프로필 이미지" class="w-full h-full rounded-[10px]">
+                    <!-- <img :src=profileImg alt="프로필 이미지" class="w-full h-full rounded-[10px]"> -->
+                    <img :src="baseURL + 'img/profile01.jpeg'" alt="프로필 이미지" class="w-full h-full rounded-[10px]">
                 </div>
                 <div class="flex flex-col justify-start items-start gap-[20px]" data-aos="fade-up">
                     <div>박상이 / <span class="text-[#6A994E]">1990.11.02</span></div>
@@ -117,11 +119,12 @@
     </div>
 </template>
 <script setup>
-import bannerImg from '@/assets/images/banner.png'
-import profileImg from '@/assets/images/profile01.jpeg'
+// import bannerImg from '@/assets/images/banner.png'
+// import profileImg from '@/assets/images/profile01.jpeg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
 definePageMeta({
     layout: 'sub',
 });

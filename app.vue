@@ -9,6 +9,10 @@
 
 
 <script setup>
+const config = useRuntimeConfig()
+
+const base = config.app.baseURL // '/portfolio/' or '/'
+
 useHead({
   title: "SangYi's Web Portfolio",
   titleTemplate: "%s",
@@ -34,7 +38,7 @@ useHead({
       },
       {
           property: "og:image",
-          content: "/img/thumbnail.png",
+          content: base + "img/thumbnail.png",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://sang2e.github.io/portfolio/" },
@@ -47,7 +51,7 @@ useHead({
     {
         rel: "icon",
         type: "image/png",
-        href: "/img/favicon.png",
+        href: base + "img/favicon.png",
     },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },

@@ -54,13 +54,14 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-import work01 from '@/assets/images/work01.png'
-import work02 from '@/assets/images/work02.png'
-import work03 from '@/assets/images/work03.png'
-import work04 from '@/assets/images/work04.png'
-import work05 from '@/assets/images/work05.png'
-import work06 from '@/assets/images/work06.png'
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+// import work01 from '@/assets/images/work01.png'
+// import work02 from '@/assets/images/work02.png'
+// import work03 from '@/assets/images/work03.png'
+// import work04 from '@/assets/images/work04.png'
+// import work05 from '@/assets/images/work05.png'
+// import work06 from '@/assets/images/work06.png'
 // import work07 from '@/assets/images/work07.png'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -90,7 +91,8 @@ const hoveredIndex = ref(null)
 
 const works = [
   {
-    img: work01,
+    // img: work01,
+    img: baseURL + 'img/work01.png',
     type: 'Responsive',
     date: '2025.06',
     description: '학술행사 홈페이지',
@@ -102,7 +104,8 @@ const works = [
     link: '/work/detail',
   },
   {
-    img: work02,
+    // img: work02,
+    img: baseURL + 'img/work02.png',
     type: 'Responsive',
     date: '2025.05',
     description: '기업 홈페이지',
@@ -114,7 +117,8 @@ const works = [
     link: '/work/detail',
   },
   {
-    img: work03,
+    // img: work03,
+    img: baseURL + 'img/work03.png',
     type: 'Responsive',
     date: '2025.04',
     description: '기업 홈페이지',
@@ -126,7 +130,8 @@ const works = [
     link: '/work/detail',
   },
   {
-    img: work04,
+    // img: work04,
+    img: baseURL + 'img/work04.png',
     type: 'Responsive',
     date: '2025.03',
     description: '기업 홈페이지',
@@ -138,7 +143,8 @@ const works = [
     link: '/work/detail',
   },
   {
-    img: work05,
+    // img: work05,
+    img: baseURL + 'img/work05.png',
     type: 'Responsive',
     date: '2025.01',
     description: '대학교 홈페이지',
@@ -150,7 +156,8 @@ const works = [
     link: '/work/detail',
   },
   {
-    img: work06,
+    // img: work06,
+    img: baseURL + 'img/work06.png',
     type: 'Responsive',
     date: '2025.01',
     description: '대학교 홈페이지',
@@ -162,7 +169,8 @@ const works = [
     link: '/work/detail',
   },
 //   {
-//     img: work07,
+    // img: work07,
+//    baseURL + 'img/work0.png'work07,
 //     type: 'Responsive',
 //     date: '2025.05',
 //     description: '기업 홈페이지',
