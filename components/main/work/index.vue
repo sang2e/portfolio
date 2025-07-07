@@ -35,7 +35,7 @@
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] rounded-full bg-transparent backdrop-blur-md border text-black group-hover:bg-white border-black overflow-hidden transition-all duration-300 group-hover:w-[100px] group-hover:h-[100px]"
             >
                 <a
-                    :href="`${base}/work/detail/${index}`"
+                    :href="`/portfolio/work/detail/${index}`"
                     class="flex justify-center items-center w-full h-full text-[16px] font-normal"
                 >
                   <span class="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0">
