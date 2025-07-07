@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   generate: {
     dir: 'docs',
+    fallback: true, // ✅ 404.html 생성 (SPA 라우팅 대응)
   },
   
   css: ['@/assets/css/tailwind.css'],
