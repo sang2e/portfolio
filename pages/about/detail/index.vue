@@ -123,11 +123,6 @@
 // import profileImg from '@/assets/images/profile01.jpeg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { onMounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
 definePageMeta({
@@ -139,9 +134,5 @@ onMounted(() => {
     AOS.init();
   }
 });
-watch(route, () => {
-    if (process.client) {
-      AOS.refresh()
-    }
-})
+
 </script>

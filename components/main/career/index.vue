@@ -52,23 +52,13 @@
   <script setup>
   import AOS from 'aos'
   import 'aos/dist/aos.css'
-  import { onMounted, watch } from 'vue'
-  import { useRoute } from 'vue-router'
-
-  const route = useRoute()
 
   onMounted(() => {
     if (process.client) {
       AOS.init();
     }
   });
-
-  watch(route, () => {
-    if (process.client) {
-      AOS.refresh()
-    }
-  })
-
+  
   const careers = [
     {
       period: '24.11 ~ 25.06',

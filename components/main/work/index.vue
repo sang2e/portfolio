@@ -51,14 +51,11 @@
     </div>
 </template>
 <script setup>
-import { onMounted, onUnmounted, ref, watch } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
 
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
@@ -95,12 +92,6 @@ onMounted(() => {
       },
     })
   }
-})
-
-watch(route, () => {
-    if (process.client) {
-      AOS.refresh()
-    }
 })
 
 const hoveredIndex = ref(null)
