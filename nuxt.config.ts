@@ -8,14 +8,6 @@ export default defineNuxtConfig({
     baseURL: '/portfolio/', // 꼭 이 경로 필요
   },
   
-  nitro: {
-    preset: 'static',
-    static: {
-      // 여기 추가
-      publicDir: 'docs',
-    },
-  },
-
   css: ['@/assets/css/tailwind.css'],
 
   modules: [
