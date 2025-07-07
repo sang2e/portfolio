@@ -34,10 +34,15 @@ import bannerImg from '@/assets/images/banner.png'
 
 const isVisible = ref(false)
 
+
 onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = true
-  }, 1000)
+    if (process.client) {
+        AOS.init();
+    }
+    
+    setTimeout(() => {
+        isVisible.value = true
+    }, 1000)
 })
 
 </script>

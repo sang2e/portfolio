@@ -50,6 +50,11 @@
   </template>
   
   <script setup>
+  onMounted(() => {
+    if (process.client) {
+      AOS.init();
+    }
+  });
   const careers = [
     {
       period: '24.11 ~ 25.06',

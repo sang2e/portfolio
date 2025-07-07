@@ -30,4 +30,9 @@
 <script setup>
 import { CircleArrowRight } from 'lucide-vue-next'
 
+onMounted(() => {
+  if (process.client) {
+    AOS.init();
+  }
+});
 </script>

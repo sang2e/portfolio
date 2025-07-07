@@ -96,6 +96,12 @@ definePageMeta({
     layout: 'sub',
 });
 
+onMounted(() => {
+  if (process.client) {
+    AOS.init();
+  }
+});
+
 const projects = [
   {
     title: 'ISCRE29',

@@ -5,7 +5,14 @@ export default defineNuxtConfig({
   components: true,
 
   app: {
-    baseURL: '/portfolio/', // 꼭 이 경로 필요
+    baseURL: '/portfolio/',        // GitHub Pages용 서브 경로
+    buildAssetsDir: '/portfolio/_nuxt/', // 정적 자산 경로도 맞춰야 함
+  },
+  generate: {
+    dir: 'docs',                   // GitHub Pages용 빌드 경로
+  },
+  nitro: {
+    preset: 'static',
   },
   
   css: ['@/assets/css/tailwind.css'],

@@ -124,5 +124,10 @@ definePageMeta({
     layout: 'sub',
 });
 
+onMounted(() => {
+  if (process.client) {
+    AOS.init();
+  }
+});
 
 </script>
