@@ -30,14 +30,17 @@
     </div>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 // import bannerImg from '@/assets/images/banner.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useRoute } from 'vue-router'
+
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
 const isVisible = ref(false)
 
+const route = useRoute()
 
 onMounted(() => {
     if (process.client) {
@@ -47,6 +50,12 @@ onMounted(() => {
     setTimeout(() => {
         isVisible.value = true
     }, 1000)
+})
+
+watch(route, () => {
+  if (process.client) {
+    AOS.refresh()
+  }
 })
 
 </script>

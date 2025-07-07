@@ -51,9 +51,15 @@
     </div>
 </template>
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
 // import work01 from '@/assets/images/work01.png'
@@ -67,24 +73,34 @@ const baseURL = config.app.baseURL
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-  const sections = document.querySelector('#work')
-  const cards = sections.querySelectorAll('.work-card')
+  if (process.client) {
+    AOS.init();
 
-  // 가로 길이 계산
-  const totalScrollWidth = sections.scrollWidth - sections.clientWidth
+    const sections = document.querySelector('#work')
+    const cards = sections.querySelectorAll('.work-card')
 
-  gsap.to(sections, {
-    x: () => `-${totalScrollWidth}px`,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: sections,
-      start: 'top top',
-      end: () => `+=${sections.scrollWidth}`, // 스크롤 길이
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-    },
-  })
+    // 가로 길이 계산
+    const totalScrollWidth = sections.scrollWidth - sections.clientWidth
+
+    gsap.to(sections, {
+      x: () => `-${totalScrollWidth}px`,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: sections,
+        start: 'top top',
+        end: () => `+=${sections.scrollWidth}`, // 스크롤 길이
+        scrub: true,
+        pin: true,
+        anticipatePin: 1,
+      },
+    })
+  }
+})
+
+watch(route, () => {
+    if (process.client) {
+      AOS.refresh()
+    }
 })
 
 const hoveredIndex = ref(null)

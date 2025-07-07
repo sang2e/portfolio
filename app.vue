@@ -62,12 +62,15 @@ useHead({
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Meddon&display=swap'
-    }
+    },
+    { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' }
   ]
 })
 
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 onMounted(() => {
   gsap.from('#app-wrapper', {

@@ -33,6 +33,11 @@ import { SquareArrowOutUpRight, CircleArrowRight } from 'lucide-vue-next'
 // import aboutImg from '@/assets/images/berry.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
 
@@ -41,5 +46,12 @@ onMounted(() => {
     AOS.init();
   }
 });
+
+// 👉 AOS 재초기화 (라우터 변경 시)
+watch(route, () => {
+  if (process.client) {
+    AOS.refresh()
+  }
+})
 
 </script>

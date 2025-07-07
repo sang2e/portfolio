@@ -95,6 +95,10 @@ import { useRoute } from 'vue-router'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { onMounted, watch } from 'vue'
+
+const route = useRoute()
+
 const config = useRuntimeConfig()
 const baseURL = config.app.baseURL
 
@@ -107,6 +111,12 @@ onMounted(() => {
     AOS.init();
   }
 });
+
+watch(route, () => {
+    if (process.client) {
+      AOS.refresh()
+    }
+})
 
 const projects = [
   {
@@ -219,7 +229,6 @@ const projects = [
 ]
 
 
-const route = useRoute()
 const projectIndex = Number(route.params.id)
 
 const project = projects[projectIndex]
