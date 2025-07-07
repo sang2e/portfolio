@@ -92,6 +92,9 @@ import work06_01 from '@/assets/images/work06_01.png'
 import work06_02 from '@/assets/images/work06_02.png'
 import work06_03 from '@/assets/images/work06_03.png'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 definePageMeta({
     layout: 'sub',
 });

@@ -29,6 +29,8 @@
 </template>
 <script setup>
 import { CircleArrowRight } from 'lucide-vue-next'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 onMounted(() => {
   if (process.client) {

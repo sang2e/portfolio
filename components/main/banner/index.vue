@@ -31,6 +31,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import bannerImg from '@/assets/images/banner.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const isVisible = ref(false)
 
@@ -39,7 +41,7 @@ onMounted(() => {
     if (process.client) {
         AOS.init();
     }
-    
+
     setTimeout(() => {
         isVisible.value = true
     }, 1000)

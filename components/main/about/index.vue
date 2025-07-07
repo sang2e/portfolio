@@ -30,6 +30,8 @@
 <script setup>
 import { SquareArrowOutUpRight, CircleArrowRight } from 'lucide-vue-next'
 import aboutImg from '@/assets/images/berry.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 onMounted(() => {
   if (process.client) {

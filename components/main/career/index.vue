@@ -50,6 +50,9 @@
   </template>
   
   <script setup>
+  import AOS from 'aos'
+  import 'aos/dist/aos.css'
+
   onMounted(() => {
     if (process.client) {
       AOS.init();

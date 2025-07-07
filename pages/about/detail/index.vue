@@ -119,6 +119,8 @@
 <script setup>
 import bannerImg from '@/assets/images/banner.png'
 import profileImg from '@/assets/images/profile01.jpeg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 definePageMeta({
     layout: 'sub',
