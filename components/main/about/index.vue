@@ -1,10 +1,10 @@
 <template>
     <div id="about" class="px-[20px] py-[100px] pt-[150px] max-w-[1200px] w-full mx-auto">
         <div class="flex flex-col justify-start items-center text-center gap-[50px]">
-            <div class="w-[100px] sm:w-[200px]">
+            <div class="w-[150px] sm:w-[200px]">
                 <img :src=aboutImg alt="베리 사진" class="w-full" data-aos="fade-up">
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" class="word-keep">
                 안녕하세요.<br/> 
                 웹퍼블리셔 박상이입니다.<br/><br/>
                 우리는 하루 동안 얼마나 많은 웹사이트를 이용할까요?<br/>

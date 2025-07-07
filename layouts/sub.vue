@@ -2,7 +2,7 @@
     <div>
       <CommonHeaderNoMenu />
       <NuxtPage />
-      <!-- <CommonFooter /> -->
+      <CommonGoToTop />
     </div>
 </template>
   

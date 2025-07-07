@@ -8,9 +8,9 @@
       <div class="flex justify-between items-center w-full max-w-[1200px] h-full px-[20px] mx-auto">
 
           <div class="flex justify-center items-center h-full ">
-              <a class="flex justify-center items-center w-fit h-full text-[18px] font-[700] hover:text-[#6A994E]" href="/">SangYi's Web Portfolio</a>
+              <a class="flex justify-center items-center w-fit h-full text-[18px] font-[700] hover:text-[#6A994E]" href="/">Web Portfolio</a>
           </div>
-          <div class="flex justify-center items-center gap-[60px] h-full">
+          <div class="hidden md:flex justify-center items-center gap-[40px] lg:gap-[60px] h-full">
               <a class="flex justify-center items-center w-fit h-full text-[18px] font-[700] uppercase hover:text-[#6A994E]" href="#about">About Me</a>
               <a class="flex justify-center items-center w-fit h-full text-[18px] font-[700] uppercase hover:text-[#6A994E]" href="#career">Career</a>
               <a class="flex justify-center items-center w-fit h-full text-[18px] font-[700] uppercase hover:text-[#6A994E]" href="#work">Work</a>

@@ -2,6 +2,7 @@
     <div>
       <CommonHeader />
       <NuxtPage />
+      <CommonGoToTop />
     </div>
 </template>
   

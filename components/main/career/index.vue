@@ -1,25 +1,25 @@
 <template>
     <div id="career" class="relative px-[20px] py-[150px] max-w-[1200px] w-full mx-auto">
 
-        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[1px] h-[92%] bg-black"></div>
+        <div class="absolute top-1/2 left-[19px] sm:left-1/2 -translate-y-1/2 sm:-translate-x-1/2 w-[1px] h-[92%] bg-black"></div>
         <div class="flex flex-col justify-start items-start gap-[60px] w-full">
             <div
                 v-for="(career, index) in careers"
                 :key="index"
                 class="w-full flex"
-                :class="index % 2 === 0 ? 'justify-end' : 'justify-start'"
+                :class="index % 2 === 0 ? 'justify-start sm:justify-end' : 'justify-start'"
                 data-aos="fade-up"
             >
-                <div class="w-1/2">
+                <div class="w-full sm:w-1/2">
                     <div
                         class="relative font-bold flex items-center gap-[8px]"
-                        :class="index % 2 === 0 ? 'justify-start text-left pl-[12px]' : 'justify-end text-right pr-[12px]'"
+                        :class="index % 2 === 0 ? 'justify-start text-left pl-[12px]' : 'justify-start text-left pl-[12px] sm:justify-end sm:text-right sm:pr-[12px]'"
                     >
                         <!-- 점 표시 -->
                         <span
                             class="absolute top-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-[#6A994E] rounded-full shrink-0"
                             :class="[
-                                index % 2 === 0 ? 'left-[-4px]' : 'right-[-4px]',
+                                index % 2 === 0 ? 'left-[-4px]' : 'left-[-4px] sm:left-auto sm:right-[-4px]',
                                 index % 2 !== 0 && 'order-2'
                             ]" 
                         ></span>
@@ -33,7 +33,7 @@
                     <!-- 작업 리스트 -->
                     <div
                         class="flex flex-col gap-[6px] mt-[10px]"
-                        :class="index % 2 === 0 ? 'items-start text-left pl-[20px]' : 'items-end text-right pr-[20px]'"
+                        :class="index % 2 === 0 ? 'items-start text-left pl-[20px]' : 'items-start text-left pl-[20px] sm:items-end sm:text-right sm:pr-[20px]'"
                     >
                         <div
                             v-for="(task, taskIndex) in career.tasks"
