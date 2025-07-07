@@ -101,7 +101,7 @@ const works = [
     // hoverColor: '#1e3a8a',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
   {
     // img: work02,
@@ -114,7 +114,7 @@ const works = [
     // hoverColor: '#378d56',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
   {
     // img: work03,
@@ -127,7 +127,7 @@ const works = [
     // hoverColor: '#b83263',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
   {
     // img: work04,
@@ -140,7 +140,7 @@ const works = [
     // hoverColor: '#5ab0df',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
   {
     // img: work05,
@@ -153,7 +153,7 @@ const works = [
     // hoverColor: '#02b3cd',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
   {
     // img: work06,
@@ -166,7 +166,7 @@ const works = [
     // hoverColor: '#0544b7',
     baseColor: '#FFFFFF',
     hoverColor: '#6A994E',
-    link: '/work/detail',
+    link: baseURL + '/work/detail',
   },
 //   {
     // img: work07,
@@ -177,7 +177,7 @@ const works = [
 //     title: '외국인환자유치',
 //     baseColor: '#5ab0df',
 //     hoverColor: '#5ab0df',
-//     link: '/work/detail',
+//     link: baseURL + '/work/detail',
 //   },
   
 ]

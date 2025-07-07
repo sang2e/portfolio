@@ -1,4 +1,4 @@
-import{c}from"./EavtLypo.js";/**
+import{c}from"./X98mL_1D.js";/**
  * @license lucide-vue-next v0.525.0 - ISC
  *
  * This source code is licensed under the ISC license.

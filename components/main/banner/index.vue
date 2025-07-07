@@ -1,7 +1,8 @@
 <template>
     <div id="" class="relative w-full h-[100vh] bg-cover"
-        :style="{ backgroundImage: `url(${bannerImg})`}"
+        :style="{ backgroundImage: `url(${baseURL}img/banner.png)` }"    
     >
+    <!-- :style="{ backgroundImage: `url(${bannerImg})`}" -->
         <div 
             :class="[
                 'w-full h-full py-[100px] transition-opacity duration-1000 bg-black',
@@ -30,10 +31,11 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
-import bannerImg from '@/assets/images/banner.png'
+// import bannerImg from '@/assets/images/banner.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
 const isVisible = ref(false)
 
 

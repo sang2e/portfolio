@@ -5,7 +5,7 @@
         </div>
         <div class="flex justify-end items-center gap-[10px] sm:gap-[30px]">
             <div>
-                <a href="/about/detail" class="uppercase text-[#6A994E] text-[12px] sm:text-[16px]">
+                <a :href="baseURL + 'about/detail'" class="uppercase text-[#6A994E] text-[12px] sm:text-[16px]">
                     resume
                 </a>
             </div>
@@ -23,5 +23,6 @@
     </div>
 </template>
 <script setup>
-
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
 </script>
