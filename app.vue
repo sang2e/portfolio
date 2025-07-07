@@ -10,7 +10,45 @@
 
 <script setup>
 useHead({
+  title: "SangYi's Web Portfolio",
+  titleTemplate: "%s",
+  meta: [
+      {
+          name: "viewport",
+          content:
+              "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+      },
+      {
+          name: "description",
+          content: "SangYi's Web portfolio",
+      },
+      {
+          name: "keywords",
+          content:
+              "박상이, web portfolio, webportfolio, 웹퍼블리셔, 포트폴리오",
+      },
+      { property: "og:title", content: "Web Portfolio" },
+      {
+          property: "og:description",
+          content: "SangYi's Web portfolio",
+      },
+      {
+          property: "og:image",
+          content: "/img/thumbnail.png",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://sang2e.github.io/portfolio/" },
+      {
+          name: "naver-site-verification",
+          content: "0c45b8f31f79b3c1f4765da975406015cc05ac56",
+      },
+  ],
   link: [
+    {
+        rel: "icon",
+        type: "image/png",
+        href: "/img/favicon.png",
+    },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
     {
