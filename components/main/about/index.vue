@@ -29,6 +29,6 @@
 </template>
 <script setup>
 import { SquareArrowOutUpRight, CircleArrowRight } from 'lucide-vue-next'
-import aboutImg from '~/assets/images/berry.png'
+import aboutImg from '@/assets/images/berry.png'
 
 </script>

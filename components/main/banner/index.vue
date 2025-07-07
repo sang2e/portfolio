@@ -30,7 +30,7 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
-import bannerImg from '~/assets/images/banner.png'
+import bannerImg from '@/assets/images/banner.png'
 
 const isVisible = ref(false)
 

@@ -117,8 +117,8 @@
     </div>
 </template>
 <script setup>
-import bannerImg from '~/assets/images/banner.png'
-import profileImg from '~/assets/images/profile01.jpeg'
+import bannerImg from '@/assets/images/banner.png'
+import profileImg from '@/assets/images/profile01.jpeg'
 
 definePageMeta({
     layout: 'sub',

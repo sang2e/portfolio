@@ -55,13 +55,13 @@ import { onMounted, onUnmounted, ref } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import work01 from '~/assets/images/work01.png'
-import work02 from '~/assets/images/work02.png'
-import work03 from '~/assets/images/work03.png'
-import work04 from '~/assets/images/work04.png'
-import work05 from '~/assets/images/work05.png'
-import work06 from '~/assets/images/work06.png'
-import work07 from '~/assets/images/work07.png'
+import work01 from '@/assets/images/work01.png'
+import work02 from '@/assets/images/work02.png'
+import work03 from '@/assets/images/work03.png'
+import work04 from '@/assets/images/work04.png'
+import work05 from '@/assets/images/work05.png'
+import work06 from '@/assets/images/work06.png'
+// import work07 from '@/assets/images/work07.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
