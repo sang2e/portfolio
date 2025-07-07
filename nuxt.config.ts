@@ -7,13 +7,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   },
-  nitro: {
-    preset: 'static',
-    static: {
-      // GitHub Pages용
-      publicDir: 'docs',
-    },
-  },
   router: {
     options: {
       // GitHub Pages용 라우터 경로 설정
