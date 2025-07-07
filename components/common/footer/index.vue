@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-between items-center max-w-[1200px] w-full h-[80px] mx-auto px-[20px]">
         <div class="text-[12px] sm:text-[16px] text-[#6A994E]">
-            © 2025 codesigner.cafe24.com
+            © 2025 sang2e.github.io
         </div>
         <div class="flex justify-end items-center gap-[10px] sm:gap-[30px]">
             <div>

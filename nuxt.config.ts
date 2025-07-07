@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   components: true,
 
+  app: {
+    baseURL: '/portfolio/',
+  },
+
   css: ['@/assets/css/tailwind.css'],
 
   modules: [

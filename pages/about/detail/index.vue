@@ -15,7 +15,7 @@
                     <div>
                         포트폴리오
                         <a href="https://codesigner.cafe24.com/" target="_blank" class=" text-[#6A994E]">
-                            codesigner.cafe24.com
+                            https://sang2e.github.io/portfolio/
                         </a>
                     </div>
                     <div>
