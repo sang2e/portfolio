@@ -7,9 +7,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/portfolio/',
   },
-  generate: {
-    dir: 'docs' as const, // 타입 단언으로 해결
-  },
 
   css: ['@/assets/css/tailwind.css'],
 
