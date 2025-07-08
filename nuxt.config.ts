@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     baseURL: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   },
   generate: {
-    dir: 'docs',
     fallback: true, // ✅ 404.html 생성 (SPA 라우팅 대응)
   },
   
