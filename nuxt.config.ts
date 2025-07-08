@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   components: true,
   // ssr: false,
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+    // baseURL: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+    baseURL: '/portfolio/',
   },
   generate: {
     fallback: true, // ✅ 404.html 생성 (SPA 라우팅 대응)
