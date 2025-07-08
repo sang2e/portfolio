@@ -19,7 +19,7 @@
                 꿈을 향해 앞으로 전진하는 웹퍼블리셔가 되겠습니다.<br/>
             </div>
             <div data-aos="fade-up">
-                <a class="flex justify-center items-center py-[6px] px-[10px] hover:text-[#6A994E]" href="/about/detail">
+                <a class="flex justify-center items-center py-[6px] px-[10px] hover:text-[#6A994E]" href="/portfolio/about/detail">
                     자기소개 더보기
                     <!-- <SquareArrowOutUpRight class="w-[16px] ml-[4px] hover:text-[#6A994E]" /> -->
                     <CircleArrowRight class="w-[16px] ml-[4px] hover:text-[#6A994E]" />
